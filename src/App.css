@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+/* body */
+body {
+  padding: 15px;
+  color: white;
+  /* background-color: white; */
+  font: Belleza;
+}
+
+/* footer */
+footer {
+  background-color: #53565A; 
+  color: white;
+  margin-top: 10px;
+}
+
+footer  p {
+  margin-top: 0.8em!important;
+  margin-left: 1.5em;
+}
+
+/* main */
+.main {
+  background-color: white;
+  color: black;
+  height: 100%;
+  min-height: 100%;
+}
+
+.mainDiv {
+  margin: auto;
+  width: 90%;
+  padding: 5px;
+}
+
+.sidebar {
+  display: flex;
+  background-color: #53565A; 
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Sidebar */
+.sidebar-list-styling{
+  padding-left: 50px;
+  padding-top: 15px;
+  width: 20%;
+  background-color: #53565A;
+  color: white;
+}
+
+.sidebar-list a{
+  color: white;
+  padding: 0;
+}
+
+.sidebar-route{ 
+  flex: 1;
+  padding: '00px'; 
+}
+
+/* header */
+.header {
+  margin-top: 0.5em!important;
+  text-align: center;
+  background-color: #53565A; 
+  color: white;
+}
+
+.header a {
+  color: white;
+}
+
+.header  p {
+  margin-top: 0.8em!important;
+}
+
+/* description list, term, details */
+dl{
+  padding: 2em;
+  background-color: goldenrod;
+  border-radius: 1em;
+}
+dt{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+dd{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding-bottom: 2em;
+  display: list-item;
+  list-style-type: none;
+  line-height: 1.7em;
+}
+dd::before{
+  content: "\027BC";
+  font-size: 2.5em;
+  padding-right: 0.5em;
+  margin: 0;
+  line-height: 0.6em;
+  position: relative;
+  top: 0.2em;
+  left: 0.25em;
+}
