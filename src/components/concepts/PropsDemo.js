@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import FunctionalComponentDemo from './FunctionalComponentDemo'; //auto injected
+import PropTypes from 'prop-types';
 
 const PropsDemo = () => {
 
@@ -53,7 +53,9 @@ const PropsDemo = () => {
         </div>
     );
 };
-//the module suggests an alternate solution from my own, which was essentiialy the reverse of their solution.
+
+export default PropsDemo;
+
 const FunctionalComponent = (props) => {
     return(
         <div>
@@ -72,4 +74,15 @@ const TinyComponent = (props) => {
     );
   };
 
-export default PropsDemo;
+  
+//   FunctionalComponent.defaultProps = {
+//       string: 'This is wild!',
+//       function: () => console.log('Can I see this in my dev tools?'),
+//       selectedStyle: 'what style??'
+//     };
+
+    FunctionalComponent.propTypes = {
+        string: PropTypes.string.isRequired,
+        function: PropTypes.func.isRequired,
+        selectedStyle: PropTypes.string.isRequired
+    };
